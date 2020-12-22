@@ -29,7 +29,7 @@ SECRET_KEY = 'alsdhflakgjdlakghaldkghalekgoihkjnawekjfnqkwgejh'
 # DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-is-awesome.herokuapp.com']
+ALLOWED_HOSTS = ['django-is-awesome.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -84,8 +84,8 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': 'Blogdb',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'NAME': 'Blogdb',
     }
 }
 
